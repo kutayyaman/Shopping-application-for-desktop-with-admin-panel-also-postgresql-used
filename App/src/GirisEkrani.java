@@ -252,7 +252,7 @@ public class GirisEkrani extends javax.swing.JFrame implements WindowListener{
             mesaj_yazisi.setText("kullanici adi kullaniliyor");
             return;
         }
-        mesaj_yazisi.setText("Basariyla Uye Oldunuz 20TL hediye kazandiniz.");
+        mesaj_yazisi.setText("Basariyla Uye Oldunuz 100 TL hediye kazandiniz.");
     }//GEN-LAST:event_uyeOlmaButonuActionPerformed
 
     /**

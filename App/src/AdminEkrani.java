@@ -551,8 +551,10 @@ public class AdminEkrani extends javax.swing.JDialog implements WindowListener{
         adresAlani.setText("");
         bakiyeAlani.setText("");
         epostaAlani.setText("");
+        uyeIDAlani.setText("");
         
         int selectedrow=uyeTablosu.getSelectedRow();
+        uyeIDAlani.setText(model.getValueAt(selectedrow,0).toString());
         kullaniciAdiAlani.setText(model.getValueAt(selectedrow, 1).toString());
         sifreAlani.setText(model.getValueAt(selectedrow, 2).toString());
         telefonAlani.setText(model.getValueAt(selectedrow, 3).toString());
@@ -568,6 +570,8 @@ public class AdminEkrani extends javax.swing.JDialog implements WindowListener{
         String adres=adresAlani.getText();
         String bakiye=bakiyeAlani.getText();
         String eposta=epostaAlani.getText();
+        String uyeTuru=uyeTuruAlani.getText();
+        String uyeID=uyeIDAlani.getText();
         int selectedrow=uyeTablosu.getSelectedRow();
         if(selectedrow==-1){
             if(model.getRowCount()==0){

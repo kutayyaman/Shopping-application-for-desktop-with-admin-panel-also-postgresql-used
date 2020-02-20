@@ -91,7 +91,7 @@ public class GirisKontrol {
         } catch (SQLException ex) {
             Logger.getLogger(AdminIslemleri.class.getName()).log(Level.SEVERE, null, ex);
         }
-        String sorgu2="Insert Into \"Uye\" (\"KullaniciAdi\",\"Sifre\",\"Eposta\",\"Adres\",\"Telefon\",\"UyeTuru\",\"Bakiye\",\"AlisverisSepetiID\") VALUES(?,?,?,?,?,'K','20',currval('\"AlisverisSepeti_AlisverisSepetiID_seq\"'))";
+        String sorgu2="Insert Into \"Uye\" (\"KullaniciAdi\",\"Sifre\",\"Eposta\",\"Adres\",\"Telefon\",\"UyeTuru\",\"Bakiye\",\"AlisverisSepetiID\") VALUES(?,?,?,?,?,'K','100',currval('\"AlisverisSepeti_AlisverisSepetiID_seq\"'))";
         String sorgu3="Insert Into \"AlisverisSepeti\" (\"AlisverisSepetiID\") VALUES(NEXTVAL('\"AlisverisSepeti_AlisverisSepetiID_seq\"'))"; //istesem triggerlada yapardım ama bu currval olayı hosuma gitti
         try {  
             preparedStatement=con.prepareStatement(sorgu3);
